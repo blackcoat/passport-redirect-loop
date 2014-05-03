@@ -1,0 +1,22 @@
+{
+  "name": "passport-redirect-loop-example",
+  "version": "0.0.0",
+  "description": "A Facebook auth redirect loop following examples provided by Passport.js",
+  "main": "server.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "coffee-script": "^1.7.1",
+    "passport": "^0.2.0",
+    "passport-facebook": "^1.0.3",
+    "restify": "^2.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "coffee server.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean McCann",
+  "private": true
+}
