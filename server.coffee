@@ -7,7 +7,6 @@ passport.use new FacebookStrategy
   clientSecret: process.env.FACEBOOK_APP_SECRET
   callbackURL:  process.env.FACEBOOK_AUTH_REDIRECT_URL  # http://0.0.0.0:5000/auth/facebook/callback
   (accessToken, refreshToken, profile, done) ->
-    console.log 'Find or create a User'
     user =
       name:  profile.displayName
       email: profile.emails[0]
