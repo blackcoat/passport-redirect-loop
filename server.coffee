@@ -5,7 +5,7 @@ FacebookStrategy = require('passport-facebook').Strategy
 passport.use new FacebookStrategy
   clientID:     process.env.FACEBOOK_APP_ID
   clientSecret: process.env.FACEBOOK_APP_SECRET
-  callbackURL:  process.env.FACEBOOK_AUTH_REDIRECT_URL  # /auth/facebook/callback
+  callbackURL:  process.env.FACEBOOK_AUTH_REDIRECT_URL  # http://0.0.0.0:5000/auth/facebook/callback
   (accessToken, refreshToken, profile, done) ->
     console.log 'Find or create a User'
     user =
